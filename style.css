@@ -1,0 +1,190 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("Raleway/Raleway-Regular.ttf");
+}
+
+
+body{
+	font-family: "Raleway";
+	font-size: 25px;
+}
+
+img {
+  max-width: 100%;
+  box-sizing: border-box;
+
+}
+.alignement{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+li {
+	list-style-type: none;
+	text-align: right;
+}
+.Aligne{
+	color: #0065FC;
+	font-size: 25px;
+}
+
+.Tabu{
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+	width: 100%;
+	color: #333;
+  border-bottom: 4px solid #333;
+  padding-bottom: 18px;
+  font-size: 40px;
+
+}
+
+.ConteneurTabu{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.Tabu:hover{
+	;
+}
+
+.Tabu:active{
+border-bottom: 4px solid #0065FC;
+color: #0065FC;
+}
+
+main{
+	margin: 50px 20px;
+}
+
+h1{
+	text-align: center;;
+}
+
+#centreville{
+	text-align: center;
+}
+
+.Formu{
+	display: flex;
+	justify-content: center;
+}
+
+.search{
+	padding: 5px 6px;
+  background-color: #F2F2F2;
+  border-radius: 100px 0px 0px 100px;
+}
+
+.searchinput{
+	font-weight: bolder;
+}
+
+.loupe{
+	background-color: #0065FC;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 10px
+}
+
+.Filter{
+	display: flex;
+}
+.Economique{
+	display: flex;
+	font-weight: bold;
+}
+
+.Money{
+	background-color:#DEEBFF ;
+	color: #0065FC;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+.Eco{
+	border: groove;
+	border-color: #F2F2F2;
+	border-left: none;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 7px;
+}
+.Family{
+	display: flex;
+	font-weight: bold;
+}
+
+.Child{
+background-color:#DEEBFF ;
+	color: #0065FC;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+.Fam{
+border: groove;
+	border-color: #F2F2F2;
+	border-left: none;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 7px;
+}
+
+.Romance{
+	display: flex;
+	font-weight: bold;
+}
+
+.Heart{
+background-color:#DEEBFF ;
+	color: #0065FC;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+.Love{
+border: groove;
+	border-color: #F2F2F2;
+	border-left: none;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 7px;
+}
+.Pet{
+ display: flex;
+ font-weight: bold;
+}
+
+.Dog{
+	background-color:#DEEBFF ;
+	color: #0065FC;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+.Cat{
+	border: groove;
+	border-color: #F2F2F2;
+	border-left: none;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 7px;
+}
+.Info{
+	display: flex;
+}
+
+.I{;
+	color: #0065FC;
+	background-color: white;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
