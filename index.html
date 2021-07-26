@@ -8,34 +8,49 @@
 </head>
 <body>
 	<header>
-		<img src="logo/Reservia.svg">
 		<nav>
-			<ul>
-				<li><a href="#Hebergements"> Hebergements</a></li>
-				<li><a href="#Activites">Activités</a></li>
-				<li><a href="#S'inscrire">s'inscrire</a></li>
-			</ul>
+		<div class="alignement">	
+		<img class="Aligne" src="logo/Reservia.svg">
+			<li><a class="Aligne" style = "text-decoration: none;"href="#S'inscrire">s'inscrire</a></li>
+		</div>
+			<div class="ConteneurTabu">
+				<a style="text-decoration: none"class="Tabu" href="#Hebergements">Hébergements</a>
+				<a style="text-decoration: none"class ="Tabu" href="#Activites">Activités</a>
+			</div>
 		</nav>
 	</header>
-	<main>
+	<main class="boite">
 		<section class="Recherche">
-			<h1> Trouver votre hébergement pour des vacances de rêve</h1>
-				<p>En plein centre ville ou en pleine nature</p>
-				<form method="post" action="#">
-					<input type="search" name="recherche" placeholder="Marseille, France.">
-					<input type="submit" name="Rechercher" value="Rechercher">
+			<h1> Trouver votre hébergement</br> pour des vacances de rêve</h1>
+				<p id="centreville">En plein centre ville ou en pleine nature</p>
+				<form class="Formu" method="post" action="#">
+					<div style="flex-grow: 0"class="search"><i class="fas fa-map-marker-alt"></i></div>
+					<input  class="searchinput"style="flex-grow:4" type="search" name="recherche" placeholder="   Marseille, France.">
+					<button class="loupe"><i class="fas fa-search"></i></button> 
 				</form>
 			<h3>Filtres</h3>
-				<div><i class="fas fa-money-bill-wave"></i></div>
-					<div> Economiques</div>
-				<div><i class="fas fa-child"></i></div>
-					<div>Familial</div>
-				<div><i class="fas fa-heart"></i></div>
-					<div>Romantique</div>
-				<div><i class="fas fa-dog"></i></div>
-					<div>Animaux autorisés</div>
-				<div><i class="fas fa-info"> </i></div>
-				<p> <sub>Plus de 500 hebergements sont disponile dans cette ville.</sub></p>
+				<div class="Filter">
+					<div class="Economique">	
+						<button class="Money"><i class="fas fa-money-bill-wave"></i></button>
+						<div class="Eco"> Économiques</div>
+					</div>
+					<div class="Family">	
+						<button class="Child"><i class="fas fa-child"></i></button>
+						<div class="Fam">Familial</div>
+					</div>
+				</div>
+					<div class="Romance">	
+						<button class="Heart"><i class="fas fa-heart"></i></button>
+						<div class="Love">Romantique</div>
+					</div>
+					<div class="Pet">
+						<button class="Dog"><i class="fas fa-dog"></i></button>
+						<div class="Cat">Animaux autorisés</div>
+					</div>
+					<div class="Info">	
+						<button class="I"><i class="fas fa-info"> </i></button>
+						<p> <sub>Plus de 500 hebergements sont disponile dans cette ville.</sub></p>
+					</div>
 		</section>
 
 		<section id="Hebergements">
