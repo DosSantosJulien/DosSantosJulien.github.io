@@ -14,23 +14,26 @@ img {
   box-sizing: border-box;
 
 }
+li {
+	list-style-type: none;
+	text-align: right;
+}
 .alignement{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 30px;
 }
-li {
-	list-style-type: none;
-	text-align: right;
-}
 .Aligne{
 	color: #0065FC;
 	font-size: 25px;
 }
+.ConteneurTabu{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
 
 .Tabu{
-	overflow: hidden;
-	outline: none;
 	cursor: pointer;
 	width: 100%;
 	color: #333;
@@ -40,145 +43,181 @@ li {
 
 }
 
-.ConteneurTabu{
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-}
-.Tabu:hover{
-	;
-}
 
-.Tabu:active{
+.active a{
 border-bottom: 4px solid #0065FC;
 color: #0065FC;
 }
 
-main{
-	margin: 50px 20px;
+.Recherche{
+	width: 90%;
+	margin: 0 auto;
 }
 
+
 h1{
-	text-align: center;;
+	font-size: 40px;
 }
 
 #centreville{
-	text-align: center;
+font-size: 14px;
 }
 
 .Formu{
 	display: flex;
 	justify-content: center;
+	border: #F2F2F2 solid 3px;
+  border-radius: 25px;
 }
 
 .search{
 	padding: 5px 6px;
   background-color: #F2F2F2;
-  border-radius: 100px 0px 0px 100px;
+  border-radius: 25px 0px 0px 25px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.fa-map-marker-alt{
+	font-size: 40px;
+}
 .searchinput{
 	font-weight: bolder;
+	font-size: 40px;
+	border: none;
 }
 
 .loupe{
 	background-color: #0065FC;
-  border-radius: 6px;
+  border-radius: 25px;
   border: none;
   color: white;
-  padding: 10px
+  padding: 10px;
+  width: 110px;
+  height: 110px;
+  font-size: 40px;
+
 }
 
+.titrefiltre{
+	font-size: 15px;
+}
 .Filter{
 	display: flex;
+	flex-wrap: wrap;
 }
 .Economique{
 	display: flex;
 	font-weight: bold;
+	border: #F2F2F2 solid 4px;
+	border-radius: 67px;
 }
 
 .Money{
 	background-color:#DEEBFF ;
 	color: #0065FC;
-	border-radius: 40px;
-	border: none;
+	border-radius: 50px;
 	padding: 10px;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
 }
 
 .Eco{
-	border: groove;
-	border-color: #F2F2F2;
-	border-left: none;
-	border-top-right-radius: 40px;
-	border-bottom-right-radius: 40px;
 	padding: 7px;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
 }
 .Family{
-	display: flex;
+display: flex;
 	font-weight: bold;
+	border: #F2F2F2 solid 4px;
+	border-radius: 67px;
 }
 
 .Child{
 background-color:#DEEBFF ;
 	color: #0065FC;
-	border-radius: 40px;
-	border: none;
+	border-radius: 50px;
 	padding: 10px;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
 }
 
 .Fam{
-border: groove;
-	border-color: #F2F2F2;
-	border-left: none;
-	border-top-right-radius: 40px;
-	border-bottom-right-radius: 40px;
-	padding: 7px;
+padding: 7px;
+	font-size: 30px;
+	display: flex;
+	align-items: center
 }
 
 .Romance{
 	display: flex;
 	font-weight: bold;
+	border: #F2F2F2 solid 4px;
+	border-radius: 67px
 }
 
 .Heart{
 background-color:#DEEBFF ;
 	color: #0065FC;
-	border-radius: 40px;
-	border: none;
+	border-radius: 50px;
 	padding: 10px;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
 }
 
 .Love{
-border: groove;
-	border-color: #F2F2F2;
-	border-left: none;
-	border-top-right-radius: 40px;
-	border-bottom-right-radius: 40px;
-	padding: 7px;
+padding: 7px;
+	font-size: 30px;
+	display: flex;
+	align-items: center
 }
 .Pet{
- display: flex;
- font-weight: bold;
+display: flex;
+	font-weight: bold;
+	border: #F2F2F2 solid 4px;
+	border-radius: 67px
 }
 
 .Dog{
 	background-color:#DEEBFF ;
 	color: #0065FC;
-	border-radius: 40px;
-	border: none;
+	border-radius: 50px;
 	padding: 10px;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
 }
 
 .Cat{
-	border: groove;
-	border-color: #F2F2F2;
-	border-left: none;
-	border-top-right-radius: 40px;
-	border-bottom-right-radius: 40px;
 	padding: 7px;
+	font-size: 30px;
+	display: flex;
+	align-items: center
 }
 .Info{
-	display: flex;
+	display: flex ;
+	align-items: center;
+
 }
 
 .I{;
@@ -187,4 +226,96 @@ border: groove;
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.alignee{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.h3{
+	font-weight: bolder;
+}
+.populaire{
+	background-color: #F2F2F2;
+	padding: 20px;
+}
+
+.article1{
+	display: flex;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.dossier1{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.image1{
+	display: flex;
+	width: 20%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.texte1{
+	display: table-column;
+	color: black;
+}
+
+.fa-star{
+	color:#0065FC;
+}
+
+.Hebergement{
+	padding: 20px;
+	background-color: whitesmoke;
+}
+
+.article2{
+	display: flex;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 30px;
+ }
+
+ .dossier2{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+.image2{
+	display: flex;
+	height: 38%;
+	object-fit: cover;
+}
+
+.texte2{
+	display: table-column;
+	color: black;
+	}
+
+.affiche{
+	color: black;
+	padding-bottom: 30px;
+}
+.foot{
+	background-color: #F2F2F2;
+	font-size: 15px;
+}
+.article3{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.foot1{
+	text-decoration: none;
+	color: black;
 }
