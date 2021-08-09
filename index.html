@@ -9,14 +9,10 @@
 <body>
 	<header>
 		<nav>
-		<div class="alignement">	
-		<img class="Aligne" src="logo/Reservia.svg">
-			<li><a class="Aligne" style = "text-decoration: none;"href="#S'inscrire">s'inscrire</a></li>
-		</div>
-			<div class="ConteneurTabu">
-				<a class="Tabu active" href="#Hebergements">Hébergements</a>
-				<a class ="Tabu" href="#Activites">Activités</a>
-			</div>
+			<p><a href="#"><img src="logo/Reservia.svg" alt="logo Réservia"></a></p>
+			<p class="selected"><a href="#hebergement">Hébergements</a></p>
+			<p><a href="#activite">Activités</a></p>
+			<p class="subscription"><a href="#">S'inscrire</a></p>
 		</nav>
 	</header>
 	<main class="boite">
@@ -28,6 +24,7 @@
 					<input  class="searchinput"style="flex-grow:4" type="search" name="recherche" placeholder="   Marseille, France.">
 					<button class="loupe"><i class="fas fa-search"></i></button> 
 				</form>
+			<div class="Filtre">	
 			<h3 class="titrefiltre">Filtres</h3>
 				<div class="Filter">
 					<div class="containerfilter">	
@@ -47,6 +44,7 @@
 						<div class="textfilter">Animaux autorisés</div>
 					</div>
 				</div>
+			</div>	
 					<div class="Info">	
 						<button class="I"><i class="fas fa-info"></i></button>
 						<p> Plus de 500 hebergements sont disponile dans cette ville.</p>
@@ -188,8 +186,8 @@
 						</a>
 				</article>
 				<a  href="#">
+				<p class="affiche"><strong>Afficher plus</strong></p></a>
 			</section>
-			<p class="affiche"><strong>Afficher plus</strong></p></a>
 		</section>
 
 		<section id="Activites">
