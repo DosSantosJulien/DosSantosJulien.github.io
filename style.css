@@ -7,6 +7,7 @@
 body{
 	font-family: "Raleway";
 	font-size: 25px;
+	margin: 0;
 }
 
 img {
@@ -20,6 +21,10 @@ li {
 }
 a{
 	text-decoration: none;
+}
+
+p{
+	margin: 0;
 }
 
 header nav {
@@ -98,6 +103,7 @@ font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 0;
 }
 
 .fa-map-marker-alt{
@@ -107,6 +113,7 @@ font-size: 14px;
 	font-weight: bolder;
 	font-size: 40px;
 	border: none;
+	flex-grow: 4;
 }
 
 .loupe{
@@ -119,6 +126,10 @@ font-size: 14px;
   height: 110px;
   font-size: 40px;
 
+}
+
+.loupe p{
+	display: none;
 }
 
 .titrefiltre{
@@ -419,28 +430,45 @@ flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px){
-#centreville{
-	font-size: 30px;
-}
+	#centreville{
+		font-size: 30px;
+	}
 
-.titrefiltre{
-	font-size: 40px;
-}
+	.titrefiltre{
+		font-size: 40px;
+	}
 
-.affiche{
-	font-size: 30px;
-}
+	.affiche{
+		font-size: 30px;
+	}
 
-.foot{
-	font-size: 22px;
-}
+	.foot{
+		font-size: 22px;
+	}
 }
 
 @media screen and (min-width: 1024px){
 
+	body{
+		font-size: 15px;
+	}
+
 header nav{
 	flex-wrap: nowrap;
 	align-items: initial;
+}
+
+header nav p{
+	padding-top: 8px;
+	border-top: 5px solid transparent;
+}
+
+header nav p img{
+	width: 35%;
+}
+
+header nav p:first-child{
+	margin-right: 96px;
 }
 
 header nav p:nth-child(2),
@@ -449,41 +477,84 @@ header nav p:nth-child(4) {
 
 display: flex;
 justify-content: flex-end;
+font-size: 15px;
+justify-content: center;
+align-items: center;
+width: 14%;
+border-bottom: 0;
+padding-bottom: 0;
 }
 
 header nav p.selected {
   border-top: 5px solid #0065FC;
-  margin-top: 10px;
  }
-
-header nav p:nth-child(2),
-header nav p:nth-child(3) {
-	border-bottom: none;
-	padding-bottom: 0em;
-	font-size: 25px;
-}
-
 
 header nav p.subscription a{
 	margin-right: 2em;
-	font-size: 25px;
+	font-size: 15px;
 
 }
 header nav p.subscription{
 	order: 2;
-	margin-top: 25px;
+}
+
+h1{
+	font-size: 18px;
+}
+
+h1 br{
+	display: none;
+}
+
+#centreville{
+	font-size: 15px;
+}
+
+.Formu{
+	width: 40%;
+}
+
+.search{
+	padding: 0 6px;
+	width: 70px;
+	height: 70px;
+
+}
+
+.fa-map-marker-alt{
+	font-size:20px;
+}
+
+
+.searchinput{
+	font-size: 15px;
+	height: 70px;
+	width: 86%;
+}
+
+.loupe{
+	height: 70px;
+	border-radius: 0 25px 25px 0;
+
+}
+.loupe p{
+	display: block;
+	font-size: 15px;
 }
 
 .fa-search{
-	content-visibility: hidden;
+	display: none;
 }
 
 .Filtre{
 	display: flex;
+	width: 100%;
+	font-size: 15px;
 }
 
 .titrefiltre{
 	margin-right: 40px;
+	font-size: 20px;
 }
 
 .Filter{
@@ -491,16 +562,47 @@ header nav p.subscription{
 }
 
 .buttonfilter{
-	width: 90px;
-	height: 90px;
+	width: 50px;
+	height: 50px;
 }
 
 .textfilter{
 	margin: 0;
+	font-size: 11px;
 }
 
+.fa-money-bill-wave{
+	font-size: 13px;
+}
 
-#Hebergements{
+.fa-child{
+	font-size: 13px;
+}
+
+.fa-heart{
+	font-size: 13px;
+}
+
+.fa-dog{
+	font-size: 13px;
+}
+
+.Info{
+	margin-bottom: 24px;
+	margin-top: 7px;
+}
+
+.I{
+	font-size: 10px;
+	height: 20px;
+	width: 20px;
+}
+
+.Info p{
+	font-size: 12px;
+}
+
+#hebergement{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -508,14 +610,98 @@ header nav p.subscription{
 }
 
 .populaire{
-	width: 40%;
+	width: 30%;
 	order: 2;
+	border-radius: 25px;
+}
+
+.dossier1{
+	padding: 10px;
+}
+
+.image1{
+	width: 11vw;
+	height: 11vw;
+}
+
+.texte1{
+	font-size: 15px;
+	margin-left: 17px;
+}
+
+.texte1 h3{
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+.texte1 p{
+	font-size: 12px;
+}
+
+.texte1 .stars{
+	margin-top: 30px;
 }
 
 .Hebergement{
 	order: 1;
 	background-color: #F2F2F2;
-	width: 50%;
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 25px;
+}
+
+.Hebergement h2{
+	font-size: 41px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.article2{
+	width: 30%;
+	height: 29%;
+}
+
+.dossier2{
+	padding: 10px;
+}
+
+.image2{
+	height: 6vw;
+	width: 16vw;
+}
+
+.texte2{
+	font-size: 15px;
+}
+
+.texte2 h3{
+	font-size: 15px;
+	margin: 0;
+}
+
+.texte2 p{
+	margin-top: 3px;
+	margin-bottom: 0;
+	font-size: 15px;
+}
+
+.texte2 .stars{
+	margin-top: 12px;
+}
+
+.affiche{
+	font-size: 18px;
+	padding-bottom: 0;
+	padding-left: 30px;
+}
+
+
+#activite{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: flex-start;
 }
 
 
