@@ -8,6 +8,7 @@ body{
 	font-family: "Raleway";
 	font-size: 25px;
 	margin: 0;
+	
 }
 
 img {
@@ -455,6 +456,8 @@ flex-wrap: wrap;
 
 	body{
 		font-size: 15px;
+		max-width: 1300px;
+		margin: 0 auto;
 	}
 
 	header nav{
@@ -783,31 +786,27 @@ flex-wrap: wrap;
 		height: 244px;
 	}
 
-	.activity .article3:nth-child(1) .image3{
-		height: 32vw;
+	.activity .article3:nth-child(3n+1) .image3{
+		height: 337px;
 	}
 
 	.activity .article3:nth-child(2) .image3{
-		height: 18vw;
+		height: 185px;
 		width: 25vw;
 	}
 
 	.activity .article3:nth-child(3) .image3{
-		height: 6vw;
+		height: 62px;
 		width: 25vw;
 	}
 
-	.activity .article3:nth-child(4) .image3{
-		height: 32vw;
-	}
-
 	.activity .article3:nth-child(5) .image3{
-		height: 7vw;
+		height: 72px;
 		object-position: top;
 	}
 
 	.activity .article3:nth-child(6) .image3{
-		height: 19vw;
+		height: 195px;
 	}
 
 	.foot{
