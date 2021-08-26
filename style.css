@@ -186,7 +186,7 @@ padding-bottom: 75px;
 
 .textfilter{
 	padding: 7px;
-	font-size: 30px;
+	font-size: 44px;
 	display: flex;
 	align-items: center;
 	margin: 20px;
@@ -272,10 +272,10 @@ display: flex;
 }
 .Info{
 	display: flex ;
-	align-items: center;
+	align-items: flex-start;
 	margin-top: 40px;
 	margin-bottom: 50px;
-	font-size: 36px;
+	font-size: 48px;
 }
 
 .I{;
@@ -467,6 +467,8 @@ flex-wrap: wrap;
 	padding-left: 35px;
 	font-size: 44px;
 	}
+
+
 .foot{
 	background-color: #F2F2F2;
 	font-size: 15px;
@@ -477,9 +479,15 @@ flex-wrap: wrap;
 	padding-bottom: 20px;
 }
 
+.article4 h3 strong{
+	font-weight: 600;
+}
+
 .foot1{
 	text-decoration: none;
 	color: black;
+	display: block;
+	margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px){
@@ -496,7 +504,7 @@ flex-wrap: wrap;
 	}
 
 	.foot{
-		font-size: 22px;
+		font-size: 35px;
 	}
 }
 
@@ -579,8 +587,9 @@ flex-wrap: wrap;
 
 	.search{
 		padding: 0 6px;
-		width: 70px;
-		height: 70px;
+		width: 50px;
+		height: 50px;
+		border-radius: 15px 0px 0px 15px;
 	}
 
 	.fa-map-marker-alt{
@@ -590,7 +599,7 @@ flex-wrap: wrap;
 
 	.searchinput{
 		font-size: 15px;
-		height: 70px;
+		height: 50px;
 		width: 86%;
 	}
 
@@ -602,12 +611,12 @@ flex-wrap: wrap;
 		display: block;
 		font-size: 15px;
 		background-color: #0065FC;
-  	border-radius:0 25px 25px 0;
+  	border-radius:0 15px 15px 0;
   	border: none;
   	color: white;
   	padding: 10px;
   	width: 110px;
-  	height: 70px;
+  	height: 50px;
 	}
 
 	.fa-search{
@@ -632,16 +641,18 @@ flex-wrap: wrap;
 
 	.containerfilter{
 		border: #F2F2F2 solid 2px;
+		margin: 15px 25px 15px 0;
 	}
 	.buttonfilter{
-		width: 55px;
-		height: 55px;
+		width: 42px;
+		height: 42px;
 		border: 0px solid white;
 	}
 
 	.textfilter{
-		margin: 0;
-		font-size: 17px;
+		margin: 0 5px;
+		font-size: 13px;
+		padding: 0;
 	}
 
 	.fa-money-bill-wave{
@@ -733,7 +744,7 @@ flex-wrap: wrap;
 	}
 
 	.texte1 .stars{
-		margin-top: 30px;
+		margin-top: 25px;
 		font-size: 10px;
 	}
 
@@ -791,7 +802,7 @@ flex-wrap: wrap;
 	}
 
 	.texte2 .stars{
-		margin-top: 12px;
+		margin-top: 5px;
 		font-size: 10px;
 	}
 
@@ -849,7 +860,7 @@ flex-wrap: wrap;
 		grid-column-end: 2;
 		grid-row-start: 3;
 		grid-row-end: 4;
-		height: 107px;
+		height: 110px;
 		width: 240px;
 	}
 
@@ -915,11 +926,15 @@ flex-wrap: wrap;
 		display: flex;
 		justify-content: space-around;
 		padding-left: 0;
+		font-size: 15px;
 	}
 
-	.foot1 p{
-		padding-bottom: 20px;
+	.article4{
+		margin-left: 20px;
+		margin-right: 100px;
 	}
+
+
 
 }
 
